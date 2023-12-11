@@ -33,7 +33,7 @@ font-family: 'Poppins', sans-serif;
 .home-bg{
         height:100vh;
         width: 100%;
-        background-image: linear-gradient(rgba(9, 17, 51, 0.274),rgba(4, 9, 30, 0.322)),url(camporeebg.jpg);
+        background-image: linear-gradient(rgba(9, 17, 51, 0.274),rgba(4, 9, 30, 0.322)),url(image/camporeebg.jpg);
         background-position: center;
         background-size: cover;
         overflow-y: hidden;
@@ -117,7 +117,7 @@ font-family: 'Poppins', sans-serif;
 .home-bg2{
     height:100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(9, 17, 51, 0.534),rgba(4, 9, 30, 0.589)),url(camporeebg2.jpg);
+    background-image: linear-gradient(rgba(9, 17, 51, 0.534),rgba(4, 9, 30, 0.589)),url(image/camporeebg2.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -890,7 +890,7 @@ nav .fa{
 .home-bg{
     min-height:50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(9, 17, 51, 0.534),rgba(4, 9, 30, 0.589)),url(camporeebg2.jpg);
+    background-image: linear-gradient(rgba(9, 17, 51, 0.534),rgba(4, 9, 30, 0.589)),url(image/camporeebg2.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
      
