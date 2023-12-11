@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>events</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        
+    <section class="header3">
+        <section class="topnav">
+            <nav>
+                <a href="index.html"><img src="images/wzc-logo.png"></a>
+                <div class="nav-links" Id="nav-Links">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                    <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a></li>
+                    <li><a href="news.html">Margazine</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="music.html">Songs</a></li>
+                    <li><a href="administration.html">Administration</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                                 
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        
+        </section>
+        <section class="activities">
+        <h1>Events</h1>
+
+        <p>West Zambia Conference-Adventist Youth Ministry has a number of programs put in place to foster the physical, mental, social, and spiritual growth of the youth.</p>
+        <a href="upcoming-events.html"class="hero-btn">See upcoming events</a>
+        <h1></h1>
+        <div class="row">
+    
+            <div class="activities-col">
+                <div><img src="images/pfair1.jpg" alt="2023 Pathfinder Fair" width = "" height = "200"></div>
+                <div>
+                <a href="images/pfair1.jpg" class="hero-btn2" download><h3>2023 Pathfinder Fair</h3></a>
+            </div>
+        </div>
+            
+            <div class="activities-col">    
+                <div><img src="images/with flag.jpg" width = "" height = "250"></div>
+                <div>
+                    <a href="events.html" class="hero-btn2"><h3>World Pathfinder Day</h3></a>
+                </div>
+            </div>
+    
+                <div class="activities-col">
+                    <div><img src="images/sabbathwood.jpg" width = "" height = "350"></div>
+                    <div><a href="events.html" class="hero-btn2"><h3>Sabbath in the Wood</h3></a></div>  
+                </div>
+        </div>
+         
+        </section>
+    </section>
+    
+    <!------- JavaScript for Toggle Menu -------->
+    <script>
+
+        var navLinks = document.getElementById("nav-Links");
+        function showMenu(){
+        navLinks.style.right = "0";
+        }
+        function hideMenu(){
+        navLinks.style.right = "-200px";
+        }
+    
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>registration-wzcym</title>
+        <link rel="stylesheet" href="registrations - sheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+ 
+<body>
+
+<section class="home-bg">
+    <section class="topnav">
+        <nav>
+            <a href="index.html"><img src="images/wzc-logo.png"></a>
+            <section><div><h2 class="logo2">WZC Registrations Page</h2></div></section>
+            <div class="nav-links" Id="nav-Links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a></li>
+            <li><a href="news.html">Magazine</a><i class="fa fa-newspaper-o" aria-hidden="true"></i></li>
+            <li><a href="resources.html">Resources</a><i class="fa fa-file-pdf-o" aria-hidden="true"></i></li>
+            <li><a href="music.html">Songs</a><i class="fa fa-music" aria-hidden="true"></i></li>
+            <li><a href="administration.html">Administration</a><i class="fa fa-user" aria-hidden="true"></i></li>
+            <li><a href="about.html">About</a><i class="fa fa-address-book" aria-hidden="true"></i></li>
+            <li><a href="contact.html">Contact us</a><i class="fa fa-phone" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+</section>
+    <h2></h2>
+    <div>
+        <form class="form2" method="post" action="" name="registrations">
+            <h3 class="hero-btn2">Register</h3>
+            <input name="Name" id="name" placeholder="Your Name" required>
+            <select name="Gender" id="gender" placeholder="Gender" required>
+                <option>-----Select Gender-----</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <input type="text" name="Age" placeholder="age" required>
+            <input type="email" name="Email id" placeholder="email id" required>
+            <input name="Phone" id="Phone" placeholder="phone no." required>  
+            <select name="District" id="district" onchange="populateChurch()" required>
+                <option value="" selected disabled>-----Select District-----</option>
+                <option>Mongu Central</option>
+                <option>Mongu North</option>
+                <option>Mongu South</option>
+                <option>Kalabo Central</option>
+                <option>Kaoma Central</option>
+                <option>Kaoma West</option>
+                <option>Nkeyema</option>
+                <option>Senanga</option>
+                <option>Sesheke West</option>
+                <option>Sesheke East</option>
+                <option>Mulobezi</option>
+                <option>Lukulu</option>
+                <option>Sitoti</option>
+                <option>Shangombo</option>
+                <option>Sikongo</option>
+                <option>Liumba</option>
+                <option>Siluwe</option>
+                <option>Zambezi East</option>
+            </select>
+            <select name="Church" id="church" required>
+                <option value="" selected disabled>-----Select Church----- </option>
+            </select>
+         
+            </select>
+            <input name="Activity Registered for" id="activity" placeholder="Activity Registered for" required>
+            <button type="" submit="" id="submit">Submit</button>
+        </form>
+    </div>          
+
+<!------- JavaScript for Toggle Menu -------->
+<script>
+    var church={
+        "Mongu Central":["Mongu Central","Imwiko","Tungi","Mulambwa","North Park","Ilute","Yeta","Riverside","Lewanika","Katongo"]
+    };
+    var districtSelect=document.getElementById("district");
+    var churchSelect=document.getElementById("church");
+
+    function populateChurch(){
+        churchSelect.innerHTML='<option value="">-----Select Church-----';
+
+        var selectedDistrict=districtSelect.value;
+        if(selectedDistrict){
+            var selectedChurch=church[selectedDistrict];
+            selectedChurch.forEach(function(church){
+                var option=document.createElement("option");
+                option.value=church;
+                option.text=church;
+                churchSelect.appendChild(option);
+            });
+        }
+    }
+
+</script>
+
+    <script src="registrations - sheet.js"></script>
+    
+  <script>
+
+    var navLinks = document.getElementById("nav-Links");
+    function showMenu(){
+    navLinks.style.right = "0";
+    }
+    function hideMenu(){
+    navLinks.style.right = "-200px";
+    }
+
+    </script>
+
+</section>   
+</body>
+</html>

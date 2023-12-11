@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>registration-wzcym</title>
+        <link rel="stylesheet" href="registrations.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    
+    </head>
+ 
+<body>
+<section class="topnav">
+            <nav>
+                <a href="index.html"><img src="images/wzc-logo.png"></a>
+                <section><div><h2 class="logo2">WZC Registrations Page</h2></div></section>
+                <div class="nav-links" Id="nav-Links">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">BACK HOME</a></li>
+                        
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+ 
+</section>
+<section class="home-bg">
+    <h2></h2>
+    <div>
+        <form class="form2" action="https://formspree.io/f/mjvqzwpb" method="post">
+            <h3 class="hero-btn2">Register</h3>
+            <input name="Name" id="name" placeholder="Your Name" required>
+            <select name="Gender" id="gender" placeholder="Gender" required>
+                <option>-----Select Gender-----</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <input name="Age" id="age" placeholder="age" required>
+            <input name="Email" id="email" placeholder="email id" required>
+            <input name="Phone" id="phone" placeholder="phone no." required>
+            <select name="Church" id="church" required>
+                <option>-----Select Church-----</option>
+                <option>Mongu Central</option>
+                <option>Imwiko</option>
+                <option>Tungi</option>
+                <option>Mulambwa</option>
+                <option>North Park</option>
+                <option>Ilute</option>
+                <option>Yeta</option>
+                <option>Riverside</option>
+                <option>Lewanika</option>
+                <option>Katongo</option>
+            </select>
+            <select name="disstrict" id="district">
+                <option>-----Select District-----</option>
+                <option>Mongu Central</option>
+                <option>Mongu North</option>
+                <option>Mongu South</option>
+                <option>Kalabo</option>
+                <option>Kaoma</option>
+                <option>Nkeyema</option>
+                <option>Senanga</option>
+                <option>Sesheke</option>
+                <option>Limulunga</option>
+                <option>Lukulu</option>
+            </select>
+            <input name="Activity Registered for" id="activity" placeholder="Activity Registered for" required>
+            <button type=""submit>Submit</button>
+        </form>
+    </div>          
+
+<!------- JavaScript for Toggle Menu -------->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+    function sendEmail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "saviourmubiana361@gmail.com",
+    Password : "password",
+    To : 'saviourmubiana361@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "Name: " + document.getElementById("name").value
+    + "<br> Email: " + document.getElementById("email").value
+    + "<br> Gender: " + document.getElementById("gender").value
+    + "<br> Age: " + document.getElementById("age").value
+    + "<br> Email: " + document.getElementById("email").value
+    + "<br> Phone no: " + document.getElementById("phone").value
+    + "<br> Church: " + document.getElementById("church").value
+    + "<br> District: " + document.getElementById("district").value
+    + "<br> Activity: " + document.getElementById("activity").value
+    }).then(
+    message => alert("Registration details succesfully submitted")
+    );
+    }
+    </script>
+  <script>
+
+    var navLinks = document.getElementById("nav-Links");
+    function showMenu(){
+    navLinks.style.right = "0";
+    }
+    function hideMenu(){
+    navLinks.style.right = "-200px";
+    }
+
+    </script>
+
+</section>   
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>events</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+    <!------ activities ------->
+        
+    <section class="header3">
+        <section class="topnav">
+            <nav>
+                <a href="index.html"><img src="images/wzc-logo.png"></a>
+                <div class="nav-links" Id="nav-Links">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a></li>
+                        <li><a href="registrations - sheet.html">Register for an event</a><i class="fa fa-calendar-o" aria-hidden="true"></i></li>
+                    <li><a href="news.html">Magazine</a><i class="fa fa-newspaper-o" aria-hidden="true"></i></li>
+                    <li><a href="resources.html">Resources</a><i class="fa fa-file-pdf-o" aria-hidden="true"></i></li>
+                    <li><a href="music.html">Songs</a><i class="fa fa-music" aria-hidden="true"></i></li>
+                    <li><a href="administration.html">Administration</a><i class="fa fa-user" aria-hidden="true"></i></li>
+                    <li><a href="about.html">About</a><i class="fa fa-address-book" aria-hidden="true"></i></li>
+                    <li><a href="contact.html">Contact us</a><i class="fa fa-phone" aria-hidden="true"></i></li>          
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        
+        </section>
+        <section class="activities">
+        <h1>Upcoming Events</h1>
+        <h1></h1>
+        <div class="row">
+            <h3>2024 Camporee</h3>
+            <div class="activities-col">
+                <p></p>
+                
+                <div><img src="images/camporeebg.jpg" alt="Camporee 2024" height =500></div>
+                <div>
+                
+                 
+                </div>
+            </div>
+            <div class="activities-col">
+                <p></p>
+                <div><img src="images/camporee4.jpg" alt="Camporee 2024" height =238></div>
+                <div>
+                <a href="images/induction.jpg" class="hero-btn2" download><h3> </h3></a>
+                 
+                <section><img src="images/camporee5.jpg" alt="Camporee 2024" height =236></div>
+                
+                <a href="images/induction.jpg" class="hero-btn2" download><h3> </h3></a>
+            </section>
+                </div>
+            </div>
+        </div>
+        <div class="row">    
+            <div class="activities-col">
+                   
+            </div>
+            
+        </div>
+    </section>
+</section>
+</section>
+    
+     <!------- JavaScript for Toggle Menu -------->
+     <script>
+
+        var navLinks = document.getElementById("nav-Links");
+        function showMenu(){
+        navLinks.style.right = "0";
+        }
+        function hideMenu(){
+        navLinks.style.right = "-200px";
+        }
+    
+        </script>
+ 
+    </body>
+</html>
